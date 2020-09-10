@@ -1,0 +1,103 @@
+si tengo dos libros verdes, dos azules y 1 rojo, de cuantas maneras puedo acomodar los libros en un estante tal que los libros verdes siempre esten juntos
+
+R = 4!*2!
+
+Hay 5 personas sentadas en una mesa redonda, cuantas configurciones diferentes existen de que estas 5 personas esten acomodadas.
+
+R = (5-1)!
+
+Cuantas palabras diferentes puedo formar con la palabra MATEMATICAS.
+
+       11!
+R = --------
+	2!*3!*2!
+
+
+cuantas formas existen de poner los k * en la tabla.
+
+ 1 2 3 4 5 6 7 8 9
+|*|_|*|_|*|_|_|*|_|
+
+R = nCk
+
+Cuantos suconjuntos de tamaño k puedo formar con un conjunto de n elementos.
+
+R = nCk
+
+Tengo 20 personas. quiero formar 4 grupos, el primero de 7, el segundo 4, el tercero de 6 y el ultimo de 3. (no puede estar la misma persona en distintos grupos). Cuantas formas hay de acomodar a las 20 personas.
+
+R = 20C7 * 13C4 * 9C6 * 3C3
+
+	         20!	  	   	         
+	------------------
+	 7! * 4! * 6! * 3!
+
+Tengo una matriz de nxm y me encuentro en la esquina inferior izquierda. Solo me puedo mover hacia arriba y hacia la derecha. Cuantas formas diferentes existen para poder llegar a la esquina superior derecha.
+
+*-*-*-*
+| | | |
+*-*-*-*
+| | | |
+*-*-*-*
+| | | |
+*-*-*-*
+| | | |
+*-*-*-*
+
+|_|_|*|_|_|*|*|*|*| (n+m)Cn
+
+|*|*|*|*|_|_|_|_|_| (n+m)Cm
+
+R = (n+m)Cn
+
+Tengo una matriza de nxm. Cuantos subrectangulos existen.
+
+	  |	  |
+	-------
+	| | | |
+->	-------
+	| | | |
+	-------
+	| | | |
+	-------
+	| | | |
+->	-------
+
+(n+1)C2 * (m+1)C2
+
+---------------------  SEPARADORES  -----------------------------
+
+n bolsitas y m chocolates, Cuantas formas existen de meter los m chocoaltes en las n bolsitas.
+
+_ _|_|_|_|_ _ _
+
+R = (m+n-1)C(n-1)
+
+
+n bolsitas y m chocolates, Cuantas formas existen de meter los m chocoaltes en las n bolsitas, de tal forma que cada bolsita tenga almenos un chocolate.
+
+R = (m+n-1-n)C(n-1) = (m-1)C(n-1)
+
+
+--------------------  Inclusi'on Exclusi'on -----------------------
+
+
+Cuantos numeros menores o igual a 100 no son divisores de 3.
+
+R = 100 - (100/3)
+
+Cuantos numeros menores o igual a 100 no son divisores de 3 ni de 5.
+
+R = 100 - ((100/3) + (100/5) ) + (100/25)
+
+Cuantos numeros menores o igual a 100 no son divisores de 3 ni de 5 ni de 7.
+
+R = 100 - ((100/3) + (100/5)+(100/7) ) + ( (100/15) + (100/35) + (100/21)) - (100/105)
+
+suma(A_i) - suma(A_i n A_j) + suma(A_i n A_j n A_k )
+
+= (-1)^k* suma( intersecci'o entre k conjuntos ).
+
+----------------------  Derangements  ------------------------------
+
+Tengo una fila de n personas enumeradas del 1 al n. Cuantas formas de tal manera que al revolverse, ninuguno quede en su posici'on original.
